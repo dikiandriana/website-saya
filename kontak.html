@@ -21,16 +21,41 @@
 </nav>
 <hr>
 
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
+<button onclick="toggleDarkMode()">Ganti Mode</button>
+
+
 <h1>Kontak Saya</h1>
-<form>
+<form action="https://formsubmit.co/diki.andriana21.das@gmail.com" method="POST">
   <label>Nama:</label><br>
-  <input type="text" name="nama"><br><br>
+  <input type="text" name="nama" required><br><br>
 
   <label>Pesan:</label><br>
-  <textarea name="pesan"></textarea><br><br>
+  <textarea name="pesan" required></textarea><br><br>
+
+  <!-- Anti spam dan opsi lainnya -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
 
   <button type="submit">Kirim</button>
+  <input type="hidden" name="_next" value="https://dikiandriana.github.io/website-saya/terima-kasih.html">
+
 </form>
+
+
+
+<script>
+  function kirimForm() {
+    alert("Pesan kamu sudah terkirim!");
+    return false; // agar tidak reload halaman
+  }
+</script>
+
 
 
 </body>

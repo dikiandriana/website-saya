@@ -23,3 +23,36 @@ img {
   border-radius: 10px;
   margin: 10px 0;
 }
+
+.dark-mode {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+.dark-mode a {
+  color: #9df;
+}
+
+h1, h2, p {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button, a {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+  color: #fff;
+}
