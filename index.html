@@ -7,19 +7,21 @@
     <meta name="description" content="Website pribadi Diki, berisi informasi tentang saya, galeri foto, dan cara menghubungi saya.">
   <title>Website Saya</title>
   <link rel="stylesheet" href="style.css">
-
+  <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Halo, Saya Diki</h1>
-  <p>Ini adalah website pribadi saya.</p>
-  <img src="img/foto1.jpg" alt="Foto Diki">
+  <h1 data-aos="fade-up">Halo, Saya Diki</h1>
+<p data-aos="fade-right">Ini adalah website pribadi saya.</p>
+<img src="img/foto1.jpg" alt="Foto Diki" data-aos="zoom-in">
 
-  <nav>
+<nav data-aos="fade-up">
   <a href="index.html">Beranda</a> |
   <a href="about.html">Tentang</a> |
   <a href="galeri.html">Galeri</a> |
   <a href="kontak.html">Kontak</a>
 </nav>
+
 <hr>
 
 <h2 id="jam"></h2>
@@ -41,6 +43,12 @@
 
 
 <button onclick="toggleDarkMode()">Ganti Mode</button>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>
